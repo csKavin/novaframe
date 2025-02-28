@@ -17,7 +17,7 @@ import CIRCLE from "./Assests/CIRCLE.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./App.css";
-import logo from "./Assests/logo.png";
+import brandLogo from "./Assests/brandLogo.png";
 import client1 from "./Assests/clients/a1.png";
 import client2 from "./Assests/clients/a2.png";
 import client3 from "./Assests/clients/a3.png";
@@ -26,11 +26,18 @@ import client5 from "./Assests/clients/a5.png";
 import client6 from "./Assests/clients/a6.png";
 import client7 from "./Assests/clients/a7.png";
 import client9 from "./Assests/clients/a9.png";
-import client10 from "./Assests/clients/a10.png";
+import client10 from "./Assests/clients/pakoda.png";
 import client11 from "./Assests/clients/a11.png";
 import client12 from "./Assests/clients/a12.png";
+import brand1 from "./Assests/clients/yasho.png";
+import brand2 from "./Assests/clients/liza.png";
+import brand3 from "./Assests/clients/encoded.png";
+import brand4 from "./Assests/clients/outbox.png";
+import brand5 from "./Assests/clients/butterfly.png";
+import brand6 from "./Assests/clients/taamaraa.png";
 
 import emailjs from 'emailjs-com';
+import clsx from 'clsx';
 
 const App: React.FC = () => {
 
@@ -39,14 +46,6 @@ const App: React.FC = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
-
-
-
-
-
-
-
 
   useEffect(() => {
     AOS.init({
@@ -120,16 +119,24 @@ const App: React.FC = () => {
   const clients = [
     { img: client1, name: "Nila Kutty Channel" },
     { img: client2, name: "Vickys3vlogs" },
-    { img: client3, name: "Smart_salem" },
+    { img: client10, name: "Pakoda Boyz" },
     { img: client4, name: "Shaggis_vlogs" },
     { img: client5, name: "Kiruthis_vlogs" },
-    { img: client6, name: "Walkwithjai" },
+    { img: client3, name: "Smart_salem" },
     { img: client7, name: "Madras__foodie" },
     // { img: client8, name: "ExploreWithDeeps" },
     { img: client9, name: "Abi tamil youtuber" },
-    { img: client10, name: "theSingleshq" },
     { img: client11, name: "Rams.review" },
-    { img: client12, name: "Kanagadhara Astro tv" },
+    { img: client6, name: "Walkwithjai" },
+
+  ];
+  const clients1 = [
+    { img: brand1, name: "Yasho Jewellers" },
+    { img: brand6, name: "Taamaraa Indian Cuisine" },
+    { img: brand2, name: "Liza Products" },
+    { img: brand3, name: "The Encoded" },
+    { img: brand4, name: "Outbox Nutrition" },
+    { img: brand5, name: "Buttercup Events" },
   ];
   const settings = {
     dots: true,
@@ -230,8 +237,8 @@ const App: React.FC = () => {
         <nav className="fixed top-0 z-50 bg-black w-full  border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
           <div className="flex flex-wrap justify-between items-center mx-auto ">
             <main className="flex items-center">
-              <img src={logo} className="mr-3 h-8 sm:h-9" alt="Flowbite Logo" />
-              <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white text-white">Nova Frames</span>
+              <img src={brandLogo} className="mr-3 w-[100px] sm:w-[200px]" alt="Flowbite Logo" />
+              {/* <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white text-white">Nova Frames</span> */}
             </main>
             <div className="flex items-center lg:order-2">
               <button data-collapse-toggle="mobile-menu-2" type="button" className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false" onClick={toggleMenu}>
@@ -450,7 +457,7 @@ const App: React.FC = () => {
               <div className="absolute inset-0 w-full h-full bg-gradient-to-t from-black/80 via-black/50"></div>
             </div>
             <div className="relative p-6 px-6 py-14 md:px-12">
-              <h2 className="mb-6 text-2xl font-medium text-white">Founder Member & Managing Director</h2>
+              <h2 className="mb-6 text-2xl font-medium text-white">Co-Founder & Managing Director</h2>
               <h5 className="text-xl font-semibold text-gray-400">Prema .T</h5>
             </div>
           </div>
@@ -464,7 +471,7 @@ const App: React.FC = () => {
               <div className="absolute inset-0 w-full h-full bg-gradient-to-t from-black/80 via-black/50"></div>
             </div>
             <div className="relative p-6 px-6 py-14 md:px-12">
-              <h2 className="mb-6 text-2xl font-medium text-white">Co-Founder & Head of Software Department</h2>
+              <h2 className="mb-6 text-2xl font-medium text-white">Co-Founder</h2>
               <h5 className="text-xl font-semibold text-gray-400">Kavin .C.S</h5>
             </div>
           </div>
@@ -494,7 +501,7 @@ const App: React.FC = () => {
                   <div className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-black/80 via-black/50"></div>
                 </div>
                 <div className="relative p-6 px-6 py-14 md:px-12">
-                  <h2 className="mb-6 block font-sans text-2xl font-medium leading-[1.5] tracking-normal text-white antialiased">Founder Member & Managing Director</h2>
+                  <h2 className="mb-6 block font-sans text-2xl font-medium leading-[1.5] tracking-normal text-white antialiased">Co-Founder & Managing Director</h2>
                   <h5 className="block mb-4 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-gray-400">Prema .T</h5>
                 </div>
               </div>
@@ -505,7 +512,7 @@ const App: React.FC = () => {
                   <div className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-black/80 via-black/50"></div>
                 </div>
                 <div className="relative p-6 px-6 py-14 md:px-12">
-                  <h2 className="mb-6 block font-sans text-2xl font-medium leading-[1.5] tracking-normal text-white antialiased">Head of Software Department</h2>
+                  <h2 className="mb-6 block font-sans text-2xl font-medium leading-[1.5] tracking-normal text-white antialiased">Co-Founder</h2>
                   <h5 className="block mb-4 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-gray-400">Kavin .C.S</h5>
                 </div>
               </div>
@@ -532,26 +539,23 @@ const App: React.FC = () => {
         <div className="bg-white  md:pt-32 md:py-32 pt-16 py-16">
           <div className="mx-auto  px-6 lg:px-8">
             <h2 className="text-center font-bold leading-8 text-gray-900 sm:text-4xl text-3xl ">Clients Who Trust Us</h2>
-            <div
-              className=" max-w-full  md:overflow-hidden overflow-y-hidden pb-4 overflow-scroll"
-            >
-              <div className="flex animate-marquee ">
-                <div className="inline-flex items-center">
-                  {clients.map((item: any, index: number) => (
-                    <div className='flex-col-reverse justify-center items-center'>
-                      <div key={index} className="h-42 w-52"> {/* height: 50px, width: 50px */}
+            <h3 className='mt-4 font-bold text-center text-gray-500 dark:text-gray-400 sm:text-xl'>Our Brand Partners</h3>
+            <div className=" max-w-full md:overflow-hidden overflow-y-hidden pb-4 overflow-scroll">
+              <div className="overflow-x-auto whitespace-nowrap">
+                <div className="flex justify-center space-x-4 ">
+                  {clients1.map((item: any, index: number) => (
+                    <div key={index} className="flex flex-col items-center">
+                      <div className="h-42 w-52">
                         <img
                           alt="Transistor"
                           src={item.img}
                           className="md:h-full md:w-full object-cover"
                         />
-
                       </div>
-                      <div className='text-center  text-gray-600 font-bold'>{item.name}</div>
+                      <div className="text-center text-gray-600 font-bold">{item.name}</div>
                     </div>
                   ))}
                 </div>
-
               </div>
 
             </div>
@@ -561,6 +565,30 @@ const App: React.FC = () => {
               </svg>
 
             </div>
+            <h3 className='mt-4  font-bold text-center text-gray-500 dark:text-gray-400 sm:text-xl'>Our Creater Partners</h3>
+            <div className=" max-w-full md:overflow-hidden overflow-y-hidden pb-4 overflow-scroll">
+              <div className="flex  animate-marquee">
+                <div className="inline-flex items-center">
+                  {clients.map((item: any, index: number) => (
+                    <div className='flex-col-reverse justify-center items-center'>
+                      <div key={index} className="h-42 w-52"> {/* height: 50px, width: 50px */}
+                        <img
+                          alt="Transistor"
+                          src={item.img}
+                          className="md:h-full md:w-full object-cover"
+                        />
+                      </div>
+                      <div className='text-center  text-gray-600 font-bold'>{item.name}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+            {/* <div className='flex justify-end font-bold md:hidden '>
+              scroll &nbsp; &nbsp; <svg className="w-6 h-6 text-black " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+              </svg>
+            </div> */}
           </div>
         </div>
       </div>
