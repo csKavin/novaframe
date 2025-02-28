@@ -464,7 +464,7 @@ const App: React.FC = () => {
               <div className="absolute inset-0 w-full h-full bg-gradient-to-t from-black/80 via-black/50"></div>
             </div>
             <div className="relative p-6 px-6 py-14 md:px-12">
-              <h2 className="mb-6 text-2xl font-medium text-white">Head of Software Department</h2>
+              <h2 className="mb-6 text-2xl font-medium text-white">C0-Founder & Head of Software Department</h2>
               <h5 className="text-xl font-semibold text-gray-400">Kavin .C.S</h5>
             </div>
           </div>
