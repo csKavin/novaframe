@@ -237,7 +237,7 @@ const App: React.FC = () => {
         <nav className="fixed top-0 z-50 bg-black w-full  border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
           <div className="flex flex-wrap justify-between items-center mx-auto ">
             <main className="flex items-center">
-              <img src={brandLogo} className="mr-3 w-[100px] sm:w-[200px]" alt="Flowbite Logo" />
+              <img src={brandLogo} className="mr-3  w-[100px] sm:w-[200px]" alt="Flowbite Logo" />
               {/* <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white text-white">Nova Frames</span> */}
             </main>
             <div className="flex items-center lg:order-2">
@@ -684,7 +684,7 @@ const App: React.FC = () => {
 
 
         <div className="flex items-center justify-between py-4 px-8" style={{ backgroundImage: `url(${CIRCLE})` }}>
-          <div className="text-sm text-white sm:text-center dark:text-gray-400">© 2024 <a href="https://flowbite.com" className="hover:underline">NovaFrame™</a>. All Rights Reserved.
+          <div className="text-sm text-white sm:text-center dark:text-gray-400">© 2024 <a href="https://flowbite.com" className="hover:underline">NovaFrames™</a>. All Rights Reserved.
           </div>
           <div className="flex  space-x-6 sm:justify-center ">
             <a href="tel:8940479776">
