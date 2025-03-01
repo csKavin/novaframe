@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-//update
 import bgImg from "./Assests/bg-home.png";
 import brand from "./Assests/Brand.png";
 import { FaceSmileIcon, ShieldCheckIcon, FingerPrintIcon, TruckIcon } from "@heroicons/react/24/outline";
