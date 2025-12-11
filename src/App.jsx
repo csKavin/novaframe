@@ -1,4 +1,3 @@
-// src/App.jsx
 import React, { useEffect, useState, Suspense, useRef } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
